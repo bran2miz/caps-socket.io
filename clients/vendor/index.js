@@ -1,9 +1,9 @@
 const {io} = require("socket.io-client");
 
+const events = require('../../utility.js')
+
 // pass a value it will hold open a socket
 const client = io("ws://localhost:3000/caps");
-
-const events = require('../utility.js')
 
 //the delivery
 const payload = {

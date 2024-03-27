@@ -1,7 +1,7 @@
 const {io} = require("socket.io-client");
-
+const events = require('../../utility.js')
 const client = io("ws://localhost:3000/caps");
-const events = require('../utility.js')
+
 
 const {handleReady} = require('./handler.js')
 //listen for announcement
