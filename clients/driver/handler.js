@@ -1,3 +1,6 @@
+const events = require('../../utility.js');
+const {io} = require("socket.io-client");
+const client = io("ws://localhost:3000/caps");
 const handleReady = (payload)=> {
   console.log("The package is ready to be picked up");
 
@@ -12,4 +15,4 @@ const handleReady = (payload)=> {
   }, 5000)
 }
 
-module.exports = {client};
+module.exports = {handleReady};
